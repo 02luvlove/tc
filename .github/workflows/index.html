@@ -1,1 +1,61 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加推文</title>
+</head>
+<body>
+<form name="form3" action="{{url_for('tweet')}}" method="post" >
+  <table>
+       <tr>
+          <td>
+              <label>添加推文</label>
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="_id">_id</label>
+          </td>
+          <td><input type="number" id="_id" name = "_id" required
+                    placeholder="请输入您的_id">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="id">id：</label>
+          </td>
+          <td><input type="number" id="id" name = "id" required
+                    placeholder="请输入id">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="time">time：</label>
+          </td>
+          <td><input type="text" id="time" name = "time" required
+                    placeholder="请输入时间">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="body">body：</label>
+          </td>
+          <td><input type="text" id="body" name = "body" required
+                    placeholder="请输入推文内容" style="width:500px;height:300px">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="datastream">datastream：</label>
+          </td>
+          <td><input type="text" id="datastream"  name = "datastream" required
+                    placeholder="请输入推文类型">
+          </td>
+      </tr>
+  </table>
+        <input type="submit" value="添加推文">
+      <br><br>
+</form>
+</body>
+</html>
